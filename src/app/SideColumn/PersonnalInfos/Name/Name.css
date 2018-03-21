@@ -1,0 +1,8 @@
+.personnal-infos-name {
+    padding: 15px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 22px;
+    font-style: bold;
+    border-color: rgba(100, 98, 98, 0.4);
+}

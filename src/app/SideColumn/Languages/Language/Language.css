@@ -1,0 +1,12 @@
+.language {
+    font-size: 14px;
+    font-style: bold;
+    color:#fff;
+    text-align: center;
+}
+.language-level {
+    font-style: italic;
+    font-size: 12px;
+    text-align: left;
+    margin: auto;
+}

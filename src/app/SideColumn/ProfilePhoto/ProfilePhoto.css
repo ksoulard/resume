@@ -1,0 +1,17 @@
+.photo {
+    height: 128px;
+    width: 128px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px black solid;
+    background-image: url("https://www.w3schools.com/howto/img_fjords.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    transition: border 0.5s linear;
+}
+
+.profile-photo-wrapper {
+    padding: 15px;
+}

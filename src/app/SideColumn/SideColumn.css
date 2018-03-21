@@ -1,0 +1,9 @@
+.side-column-wrapper {
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-right: 1px solid;
+    border-right-color: rgba(100, 98, 98, 0.4);
+    color:#E4E4E4;
+    background-color: #110;    
+}
