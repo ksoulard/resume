@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/ksoulard/.brew/Cellar/node/9.6.1/bin/node /Users/ksoulard/.brew/bin/yarn start
+  /Users/ksoulard/.brew/Cellar/node/9.6.1/bin/node /Users/ksoulard/.brew/bin/yarn run deploy
 
 PATH: 
   /Users/ksoulard/.brew/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/munki
@@ -15,11 +15,14 @@ Platform:
 
 npm manifest: 
   {
+    "homepage": "http://kukurbitak.github.io/resume",
     "name": "cv",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+      "ajv": "^6.3.0",
       "chart.js": "^2.7.2",
+      "deploy": "^1.0.3",
       "prop-types": "^15.6.1",
       "react": "^16.2.0",
       "react-chartjs-2": "^2.7.0",
@@ -31,7 +34,9 @@ npm manifest:
       "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject"
+      "eject": "react-scripts eject",
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
     },
     "devDependencies": {
       "gh-pages": "^1.1.0"
@@ -7295,9 +7300,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 127
+  Exit code: 1
   Command: sh
-  Arguments: -c react-scripts start
+  Arguments: -c gh-pages -d build
   Directory: /Users/ksoulard/projects/new/resume
   Output:
   
